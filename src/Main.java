@@ -5,18 +5,17 @@ public class Main {
     * */
     public static String obtenirValeurString(Scanner scanner, String message){
         System.out.println(message);
-        String str = scanner.nextLine();
-        return str;
+        return scanner.nextLine();
     }
     public static void main(String[] args) {
         //Création du scanner pour lire depuis le clavier
         Scanner scanner = new Scanner(System.in);
 
         //Saisi du prénom
-        obtenirValeurString(scanner,"Entrez votre prénom: ");
+        String firstName = obtenirValeurString(scanner,"Entrez votre prénom: ");
 
         //Saisi du  nom
-        obtenirValeurString(scanner, "Entrez votre nom: ");
+        String lastName = obtenirValeurString(scanner, "Entrez votre nom: ");
 
     }
 }
