@@ -5,6 +5,14 @@ public class Main {
     * */
     public static String obtenirValeurString(Scanner scanner, String message){
         System.out.println(message);
+        String saisie = scanner.nextLine();
+        return saisie;
+    }
+    /*
+     * Method obtenirDate(Scanner scanner, String message) qui retourne une LocalDate à partir de la saisie
+     * */
+    public static String obtenirDate(Scanner scanner, String message){
+        System.out.println(message);
         return scanner.nextLine();
     }
     public static void main(String[] args) {
@@ -16,6 +24,9 @@ public class Main {
 
         //Saisi du  nom
         String lastName = obtenirValeurString(scanner, "Entrez votre nom: ");
+
+        //Saisi de la date de naissance
+        String birthDate = obtenirDate(scanner,"Entrez votre date de naissance (AAAA-MM-JJ): ");
 
     }
 }
