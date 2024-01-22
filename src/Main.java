@@ -5,8 +5,7 @@ public class Main {
     * */
     public static String obtenirValeurString(Scanner scanner, String message){
         System.out.println(message);
-        String saisie = scanner.nextLine();
-        return saisie;
+        return scanner.nextLine();
     }
     /*
      * Method obtenirDate(Scanner scanner, String message) qui retourne une LocalDate à partir de la saisie
