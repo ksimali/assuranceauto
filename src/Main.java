@@ -14,6 +14,13 @@ public class Main {
         System.out.println(message);
         return scanner.nextLine();
     }
+    /*
+     * Method obtenirValeurInt(Scanner scanner, String message) qui retourne le nombre entier saisi par l'utilisateur
+     * */
+    public static int obtenirValeurInt(Scanner scanner, String message){
+        System.out.println(message);
+        return scanner.nextInt();
+    }
     public static void main(String[] args) {
         //Création du scanner pour lire depuis le clavier
         Scanner scanner = new Scanner(System.in);
@@ -33,7 +40,11 @@ public class Main {
         //Saisi de la marque de la voiture
         String carBrand = obtenirValeurString(scanner, "Entrez la marque de la voiture: ");
 
+        //Saisi de l'année de la voiture
+        int year = obtenirValeurInt(scanner, "Entrez l'année de la voiture: ");
 
+        //Saisi du nombre d'accident
+        int accidentNumber = obtenirValeurInt(scanner, "Entrez le nombre d'accidents durant les 5 dernières années: ");
 
     }
 }
