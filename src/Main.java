@@ -27,5 +27,13 @@ public class Main {
         //Saisi de la date de naissance
         String birthDate = obtenirDate(scanner,"Entrez votre date de naissance (AAAA-MM-JJ): ");
 
+        //Saisi du code postal
+        String postCode = obtenirValeurString(scanner, "Entrez votre code postal: ");
+
+        //Saisi de la marque de la voiture
+        String carBrand = obtenirValeurString(scanner, "Entrez la marque de la voiture: ");
+
+
+
     }
 }
