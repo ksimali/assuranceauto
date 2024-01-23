@@ -36,7 +36,7 @@ public class Main {
                 System.out.println("format de date invalide. Entrez la date au format AAAA-MM-JJ.");
                 bool = true;
             }
-        }while(bool == true);
+        }while(bool);
 
         return dateNaissance;
     }
